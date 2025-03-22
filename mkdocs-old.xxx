@@ -1,0 +1,107 @@
+site_name: UltraRepo RAG
+site_description: AI-powered Knowledge Graph and RAG System
+site_author: UltraRepo Team
+site_url: https://ultrarepo.github.io/graph-rag
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.highlight
+    - search.suggest
+    - header.autohide
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: blue
+      accent: light blue
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+      primary: blue
+      accent: light blue
+  icon:
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/UltraRepo/graph-rag
+repo_name: UltraRepo/graph-rag
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - minify:
+      minify_html: true
+  - tags
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/UltraRepo
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ultrarepo
+  generator: false
+
+  extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - FastAPI Routes:
+      - Chat: fastapi/chat.md
+      - Documents: fastapi/documents.md
+      - Upload: fastapi/upload.md
+      - Connection: fastapi/connection.md
+  - Graph RAG Engine:
+      - GraphDB Access: engine/graphDB_dataAccess.md
+      - Graph Generation: engine/graph_generation.md
+      - Relationships: engine/make_relationships.md
+      - Post-Processing: engine/post_processing.md
+  - Embeddings & Retrieval:
+      - Embedders: embeddings/embedders.md
+      - Retrievers: embeddings/retrievers.md
+  - API Reference: api.md
+  - Tags: tags.md

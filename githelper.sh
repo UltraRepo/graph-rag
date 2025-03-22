@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# run this first: chmod +x githelper.sh
+# run this script: ./githelper.sh
+
 # Check if GitHub CLI is installed
 if ! command -v gh &> /dev/null; then
     echo "❌ GitHub CLI (gh) is not installed. Please install it first: https://cli.github.com/"

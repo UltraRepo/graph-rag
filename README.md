@@ -68,6 +68,17 @@ markdown_extensions:
       permalink: true
 ```
 
+Recommended MkDocs Material theme plugins to install
+```bash
+pip install \
+  mkdocs-material \
+  mkdocs-minify-plugin \
+  mkdocs-git-revision-date-localized-plugin \
+  mkdocs-glightbox \
+  pymdown-extensions
+  ```
+
+
 ### 4️⃣ Serve Docs
 
 ```bash
