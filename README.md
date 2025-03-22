@@ -6,7 +6,13 @@ AI Agents and systems have a limited context window (typically <2M tokens), whic
 
 ## 💡 Solution Overview
 
-UltraRepo Graph RAG solves this by combining the capabilities of knowledge graphs and vector search with lightweight metadata indexing. It enables smart AI-powered understanding and retrieval of content from massive software and document repositories, regardless of context window size. Instead of requiring full content uploads, it builds a structured graph and vectorized context map from source files, improving LLM reasoning, traceability, and extensibility.
+Unlike basic RAG solutions that lack a knowledge graph to 'map' content for discoverability by AI, UltraRepo Graph RAG combines the power of RAG with the intelligence, accuracy and AI discoverability offered by a knowledge graph (KG). Lightweight metadata indexing is provided by the KG via the Neo4j graph database, and vector data is stored independently in a scalable, searchable vector DB such as Qdrant, Weaviate, Pinecone or others. Private AI is offered through the a self-hosted LLM option with Ollama; online LLMs are also available for use in retrieval and processing. Save time when working with LLMs and get better accuracy.  Instead of requiring full content uploads during chat sessions with limited content windows, UltraRepo Graph Rag helps you by scanning repo files, then processing and embedding the repo source files into your vector DB, and then links these source files using the UltraRepo Graph, which is a'map' to your content items.  Content such as blobs and files can be stored separately in a separate database, in a git worktree, or as simple files/folders in a filesystem.
+
+Our objective is to provide an open source project that has offers smart AI-powered understanding and retrieval of content from massive software and document repositories, regardless of context window size, across multiple LLMs, both private and public, to both AI Agents and human operated AI Chat clients.  With UltraRepo Graph Rag,  improving LLM reasoning, traceability, and extensibility.
+
+File Type Support:  Initially support is provided for text files and PDF files.  
+
+Repo File and DB Scanning:  This project has basic file uploads of repo files to the Graph Rag server. If you need repo file and DB scanning with KG and smart classification and embedding, checkout UltraRepo's commercial version (coming soon!) at [UltraRepo.com](https://ultrarepo.com/).
 
 ## 🚀 Project Overview
 
