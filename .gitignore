@@ -1,0 +1,80 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+
+# Environment config
+.env
+.env.*
+
+# MkDocs and documentation site build
+/site/
+.mypy_cache/
+.cache/
+
+# Logs and local state
+*.log
+*.pid
+*.seed
+*.log.*
+
+# Docker artifacts (but keep Dockerfile/docker-compose.yml)
+docker-compose.override.yml
+*.tar
+*.img
+*.qcow2
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.code-workspace
+
+# Node.js frontend assets (if used)
+node_modules/
+dist/
+build/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Git-specific
+*.orig
+*.rej
+
+# Test outputs
+coverage/
+htmlcov/
+*.cover
+.tox/
+
+# Jupyter notebooks (optional)
+.ipynb_checkpoints/
+
+# Lint and type check reports
+report/
+reports/
+
+# PDF previews or dataset files
+*.pdf
+*.zip
+*.tar.gz
+*.csv
+*.tsv
+
+# Temporary files from mkdocs or sphinx
+*.bak
+*.tmp
+*.old

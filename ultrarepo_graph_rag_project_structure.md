@@ -1,0 +1,36 @@
+# UltraRepo Graph-RAG Project Structure
+
+- `ultrarepo-graph-rag/`: Root of the UltraRepo Graph-RAG project
+- `├── LICENSE`: License file (MIT or similar)
+- `├── README.md`: Main project documentation and overview
+- `├── data/`: Sample files and PDF input data for ingestion
+- `├── docs/`: Markdown documentation for MkDocs site
+- `├── mkdocs.yml`: Configuration file for MkDocs Material documentation site
+- `├── src/`: Primary application source code directory
+- `│   ├── backend/`: FastAPI backend server logic
+- `│   │   ├── api/`: API initialization and launch code
+- `│   │   ├── utils/`: Utility functions and helper modules
+- `│   ├── constants/`: Global constants used across services
+- `│   ├── embeddings/`: Embedding model classes (OpenAI, SentenceTransformers, etc.)
+- `│   ├── graph_generation/`: Graph schema and graph extraction logic
+- `│   │   ├── graph_generation.py`: Transforms input text into nodes and relationships
+- `│   │   ├── make_relationships.py`: Creates/refines relationships between graph nodes
+- `│   ├── models/`: Pydantic models for FastAPI request/response validation
+- `│   ├── post_processing/`: KNN graph linking and full-text indexing
+- `│   │   ├── post_processing.py`: Similarity vector linking, KNN construction
+- `│   ├── retrievers/`: Vector and hybrid retrieval logic (Neo4j + Qdrant)
+- `│   ├── routers/`: FastAPI endpoints and route logic
+- `│   │   ├── chat.py`: Handles chat endpoints and response orchestration
+- `│   │   ├── connection.py`: Neo4j DB connection handlers
+- `│   │   ├── documents.py`: APIs to handle document scanning and ingestion
+- `│   │   ├── upload.py`: Chunked file upload endpoint logic
+- `│   ├── schemas/`: Custom schema templates for entities and relationships
+- `│   ├── services/`: Business logic for API endpoints
+- `│   ├── types/`: Typed definitions, enums, data classes
+- `├── tests/`: Unit and integration test cases
+
+- `📝 Key Backend Modules`: 
+- **• graphDB_dataAccess.py**: Located in `src/backend/api/` - Handles raw database operations and queries
+- **• graph_generation.py**: Located in `src/graph_generation/` - Generates GraphDocument representations from LLM
+- **• make_relationships.py**: Located in `src/graph_generation/` - Refines node/edge creation and schema matching
+- **• post_processing.py**: Located in `src/post_processing/` - Handles KNN vector linkages and post graph cleanup
