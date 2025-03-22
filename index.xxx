@@ -1,0 +1,68 @@
+title: UltraRepo RAG Home
+description: Welcome page for the UltraRepo Graph-RAG system – AI-powered semantic code intelligence using Neo4j and Qdrant.
+tags:
+  - ultrarepo
+  - graph rag
+  - knowledge graph
+  - qdrant
+  - fastapi
+  - neo4j
+  - mkdocs
+---
+
+![UltraRepo Logo](assets/ultrarepo-logo-lightblue-r-darkblue-1024.png){ align=left width="120" }
+
+# Open the AI Context Window with **UltraRepo**
+
+Got **Massive Code** or **Huge Document Archives**?
+
+UltraRepo RAG builds advanced **Knowledge Graphs** from your source code, documents, or unstructured data – giving AI Agents the **context they need to reason intelligently.**  
+No need to upload gigabytes of code into LLM memory – **let Graph RAG do the heavy lifting.**
+
+---
+
+## ⚡ TL;DR
+
+- **UltraRepo RAG** uses **Neo4j + Qdrant** to power hybrid symbolic + vector semantic search.
+- Built with **FastAPI**, **LangChain**, and the **Neo4j GraphRAG SDK**.
+- Designed for AI agents to **understand and reason** over codebases, docs, and data at scale.
+- Uses **graph traversal** + **vector search** + **custom embeddings**.
+- Ships with full MkDocs Material documentation.
+
+---
+
+## 🔍 Project Highlights
+
+- 🧠 **Graph-Powered AI Reasoning**  
+  Build a symbolic map of your code, dependencies, or documents using Neo4j.
+
+- 🔗 **Vector Search with Qdrant**  
+  Enhance similarity search over code chunks or text embeddings.
+
+- 🛠 **FastAPI Service**  
+  Provides endpoints for document upload, schema generation, chat, and inference.
+
+- 📁 **Built for Large Repos**  
+  Easily integrates into AI DevOps pipelines, agentic IDEs, or local LLM workflows.
+
+---
+
+## 📄 Documentation
+
+Browse docs for:
+
+- [FastAPI Routes](fastapi_routes/index.md)
+- [Graph RAG Engine](graph_engine/index.md)
+- [Embeddings & Retrieval](retrieval/index.md)
+- [API Reference](api/index.md)
+
+---
+
+## 🌐 Learn More
+
+Visit [**UltraRepo.com**](https://ultrarepo.com)  
+Email: [info@ultrarepo.com](mailto:info@ultrarepo.com)
+
+---
+
+© 2025 UltraRepo – Optimized AI Code Intelligence.
