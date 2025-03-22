@@ -12,7 +12,7 @@ Our objective is to provide an open source project that has offers smart AI-powe
 
 File Type Support:  Initially support is provided for text files and PDF files.  
 
-Repo File and DB Scanning:  This project has basic file uploads of repo files to the Graph Rag server. If you need repo file and DB scanning with KG and smart classification and embedding, checkout UltraRepo's commercial version (coming soon!) at [UltraRepo.com](https://ultrarepo.com/).
+Repo File, DB Scanning:  This project has basic file uploads of repo files to the Graph Rag server. If you need repo file and DB scanning with KG and smart classification and embedding, checkout UltraRepo's commercial version (coming soon!) at [UltraRepo.com](https://ultrarepo.com/).
 
 ## 🚀 Project Overview
 
