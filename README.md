@@ -1,16 +1,16 @@
-# UltraRepo-RAG
+# UltraRepo Graph RAG
 
 ## 🔍 Problem Overview
 
-AI Agents and systems have a limited context window (typically <2M tokens), which prevents them from ingesting and reasoning over large codebases, datasets, and document archives in one pass. This limitation restricts the AI’s ability to provide accurate answers across an entire repository.
+AI Agents and systems have a limited context window (typically <2M tokens), which prevents them from ingesting and reasoning over large codebases, datasets, and document archives in one pass. This context window limitation restricts the AI’s ability to provide accurate answers across an entire repository, whether its code, docs or data.
 
 ## 💡 Solution Overview
 
-UltraRepo-RAG solves this by combining the capabilities of knowledge graphs and vector search with lightweight metadata indexing. It enables smart AI-powered understanding and retrieval of content from massive software and document repositories, regardless of context window size. Instead of requiring full content uploads, it builds a structured graph and vectorized context map from source files, improving LLM reasoning, traceability, and extensibility.
+UltraRepo Graph RAG solves this by combining the capabilities of knowledge graphs and vector search with lightweight metadata indexing. It enables smart AI-powered understanding and retrieval of content from massive software and document repositories, regardless of context window size. Instead of requiring full content uploads, it builds a structured graph and vectorized context map from source files, improving LLM reasoning, traceability, and extensibility.
 
 ## 🚀 Project Overview
 
-UltraRepo-RAG is based on [Neo4j LLM Graph Builder](https://github.com/neo4j-labs/llm-graph-builder), with added support for:
+UltraRepo Graph RAG is based on the open source [Neo4j LLM Graph Builder](https://github.com/neo4j-labs/llm-graph-builder), with added support for:
 
 - Advanced Graph RAG processing
 - Smart Code/Data indexing for AI Agents
